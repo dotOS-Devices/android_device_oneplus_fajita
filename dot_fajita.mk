@@ -27,11 +27,6 @@ $(call inherit-product, vendor/dot/config/common.mk)
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
 # FOD Animation
 EXTRA_FOD_ANIMATIONS := true
 
