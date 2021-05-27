@@ -24,9 +24,6 @@ $(call inherit-product, device/oneplus/fajita/device.mk)
 # Inherit some common DotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
-# Official dotOS
-DOT_OFFICIAL := true
-
 # FaceUnlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
