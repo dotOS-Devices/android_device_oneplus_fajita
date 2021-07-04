@@ -8,8 +8,10 @@
     "target_path": "device/oneplus/common"
   },
   {
-    "repository" : "android_kernel_oneplus_fajita",
-    "target_path": "kernel/oneplus/sdm845"
+    "repository"  : "LineageOS/android_kernel_oneplus_sdm845",
+    "target_path" : "kernel/oneplus/sdm845",
+    "branch"      : "lineage-18.1",
+    "remote"      : "github"
   },
   {
     "repository" : "proprietary_vendor_oneplus_fajita",
