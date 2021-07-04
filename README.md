@@ -16,14 +16,22 @@ It was released in November 2018.
 | Camera (Back)           | Dual: 16 MP (f/1.7, 27mm, 1/2.6", 1.22µm, gyro-EIS, OIS) + 20 MP (16 MP effective, f/1.7, 1/2.8", 1.0µm), PDAF, dual-LED flash |
 | Camera (Front)          | 16 MP (f/2.0, 25mm, 1/3", 1.0µm), gyro-EIS, Auto HDR, 1080p                                                                    |
 
-Copyright 2018 - The LineageOS Project.
+Copyright 2021 - The dotOS Project.
 
 ![OnePlus 6T](https://images-na.ssl-images-amazon.com/images/I/61-FZzBlpsL._AC_SL1000_.jpg "OnePlus 6T")
 
 ## Build instructions
 
 ```
-# Compiling
-lunch dot_fajita-userdebug (this will auto pull all dependencies)
-m[ake|ka] bacon -jx (where x is the number of jobs to run on parallel threads)
+# Download source code
+ $ mkdir android/dot && cd android/dot
+ $ repo init -u https://github.com/dotOS/manifest -b dot11
+
+ # Sync source code
+ $ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+ # Build it!
+ $ source build/envsetup.sh
+ $ lunch dot_fajita-userdebug
+ 4 make bacon
 ```
